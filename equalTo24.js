@@ -17,7 +17,7 @@ function equalTo24(a,b,c,d){
     ]
 
 
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 24; i++) {
 
         if (i === 0) {
           a = aCopy;
@@ -27,7 +27,7 @@ function equalTo24(a,b,c,d){
           if (check3(a,b,c,d).length > 0) {
             return check3(a,b,c,d);
           }
-          if (check2(a,b,c,d) === 24) {
+          if (check2(a,b,c,d).length > 0) {
             return check2(a,b,c,d);
           }
         } else if (i === 1) {
@@ -36,10 +36,9 @@ function equalTo24(a,b,c,d){
           c = bCopy;
           d = dCopy;
           if (check3(a,b,c,d).length > 0) {
-            console.log("HERE");
             return check3(a,b,c,d);
           }
-          if (check2(a,b,c,d) === 24) {
+          if (check2(a,b,c,d).length > 0) {
             return check2(a,b,c,d);
           }
         } else if (i === 2) {
@@ -152,10 +151,142 @@ function equalTo24(a,b,c,d){
           if (check2(a,b,c,d).length > 0) {
             return check2(a,b,c,d);
           }
+        } else if (i === 12) {
+          a = bCopy;
+          b = aCopy;
+          c = cCopy;
+          d = dCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 13) {
+          a = aCopy;
+          b = bCopy;
+          c = dCopy;
+          d = cCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 14) {
+          a = bCopy;
+          b = cCopy;
+          c = aCopy;
+          d = dCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 15) {
+          a = dCopy;
+          b = bCopy;
+          c = cCopy;
+          d = aCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 16) {
+          a = cCopy;
+          b = bCopy;
+          c = dCopy;
+          d = aCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 17) {
+          a = aCopy;
+          b = dCopy;
+          c = bCopy;
+          d = cCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 18) {
+          a = cCopy;
+          b = aCopy;
+          c = dCopy;
+          d = bCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 19) {
+          a = aCopy;
+          b = cCopy;
+          c = dCopy;
+          d = bCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 20) {
+          a = dCopy;
+          b = cCopy;
+          c = aCopy;
+          d = bCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 21) {
+          a = dCopy;
+          b = aCopy;
+          c = cCopy;
+          d = bCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 22) {
+          a = bCopy;
+          b = dCopy;
+          c = aCopy;
+          d = cCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
+        } else if (i === 23) {
+          a = cCopy;
+          b = dCopy;
+          c = bCopy;
+          d = aCopy;
+          if (check3(a,b,c,d).length > 0) {
+            return check3(a,b,c,d);
+          }
+          if (check2(a,b,c,d).length > 0) {
+            return check2(a,b,c,d);
+          }
         }
       }
 
-     // return not;
+      return not;
 
 }
 
@@ -181,7 +312,7 @@ function check3(a,b,c,d) {
     [b - c / d,"(b-c/d)"],
 
     [b * c - d,"(b*c-d)"],
-    [b + c * d,"(b+c*d)"],
+    [b + c / d,"(b+c/d)"],
     [b / c * d,"(b/c*d)"],
     [b * c / d,"(b*c/d)"],
 
@@ -192,6 +323,15 @@ function check3(a,b,c,d) {
 
     [b / (c + d),"(b/(c+d))"],
     [b / (c - d),"(b/(c-d))"],
+    [(b + c) * d,"((b+c)*d)"],
+    [(b + c) / d,"((b+c)/d)"],
+
+    [(b - c) * d,"((b-c)*d)"],
+    [(b - c) / d,"((b-c)/d)"],
+    [(b - (c * d)),"(b-(c*d))"],
+    [(b - (c / d)),"(b-(c/d))"],
+
+    [(b / c) - d,"((b/c)-d)"]
     ];
 
 
@@ -202,9 +342,6 @@ function check3(a,b,c,d) {
         res += format(b,c,d,arr3[i][1]);
         break
       } else if (24 * arr3[i][0] === a) {
-        console.log(arr3[i][0]);
-        console.log(arr3[i][1]);
-        console.log(a,b,c,d);
         res += String(a) + "/";
         res += format(b,c,d,arr3[i][1]);
         break
@@ -216,6 +353,18 @@ function check3(a,b,c,d) {
       } else if (24 - arr3[i][0] === a) {
         res += String(a) + "+";
         res += format(b,c,d,arr3[i][1]);
+        break;
+      } else if (arr3[i][0] - 24 === a) {
+        res += format(b,c,d,arr3[i][1]);
+        res += "-" + String(a);
+        break;
+      } else if (arr3[i][0] / 24 === a) {
+        res += format(b,c,d,arr3[i][1]);
+        res += "/" + String(a);
+        break;
+      } else if (arr3[i][0] * 24 === a) {
+        res += format(b,c,d,arr3[i][1]);
+        res += "/" + String(a);
         break;
       }
     }
@@ -267,6 +416,16 @@ function check2(a,b,c,d) {
       [(a + b) / (c - d),"(a+b)/(c-d)"],
       [(a - b) / (c + d),"(a-b)/(c+d)"],
       [(a - b) / (c - d),"(a-b)/(c-d)"],
+
+      [(a * b) - (c * d),"(a*b)-(c*d)"],
+      [(a / b) - (c / d),"(a/b)-(c/d)"],
+      [(a * b) - (c / d),"(a*b)-(c/d)"],
+      [(a / b) - (c * d),"(a/b)-(c*d)"],
+
+      [(a * b) + (c * d),"(a*b)+(c*d)"],
+      [(a / b) + (c / d),"(a/b)+(c/d)"],
+      [(a * b) + (c / d),"(a*b)+(c/d)"],
+      [(a / b) + (c * d),"(a/b)+(c*d)"]
       ];
 
       var res = "";
@@ -282,6 +441,3 @@ function check2(a,b,c,d) {
       // console.log(res);
       return res;
 }
-
-
-equalTo24(8,6,5,9);
