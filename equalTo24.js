@@ -7,16 +7,6 @@ function equalTo24(a,b,c,d){
 
   var not = "It's not possible!";
 
-  var arr4 = [
-    a + b + c + d,
-    a * b * c * d
-    ]
-
-  var arrMin = [
-    a - b - c - d
-    ]
-
-
     for (let i = 0; i < 24; i++) {
 
         if (i === 0) {
@@ -340,16 +330,16 @@ function check3(a,b,c,d) {
       if (24 / arr3[i][0] === a) {
         res += String(a) + "*";
         res += format(b,c,d,arr3[i][1]);
-        break
+        break;
       } else if (24 * arr3[i][0] === a) {
         res += String(a) + "/";
         res += format(b,c,d,arr3[i][1]);
-        break
+        break;
       } else if (24 + arr3[i][0] === a) {
         console.log("here");
         res += String(a) + "-";
         res += format(b,c,d,arr3[i][1]);
-        break
+        break;
       } else if (24 - arr3[i][0] === a) {
         res += String(a) + "+";
         res += format(b,c,d,arr3[i][1]);
@@ -435,9 +425,8 @@ function check2(a,b,c,d) {
           const cont = format(b,c,d,arrPairs[i][1],a);
           res += cont;
           return res;
-          //break;
         }
       }
-      // console.log(res);
+      
       return res;
 }
